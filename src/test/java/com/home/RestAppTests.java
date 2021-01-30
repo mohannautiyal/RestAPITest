@@ -21,7 +21,7 @@ public class RestAppTests {
 		Response resp = rs.get("/calculator/add");
 		int status =resp.getStatusCode();
 		
-		Assert.assertTrue(status==200, "Service failed");
+		Assert.assertTrue(status==201, "Service failed");
 		
 	}
 
