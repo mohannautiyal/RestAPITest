@@ -14,7 +14,7 @@ public class RestAppTests {
 	public void TestAPI() 
 	{
 	  
-		RestAssured.baseURI ="http://13.127.246.200:8080/myQAApp";	
+		RestAssured.baseURI ="http://localhost:8085/RestApplication-0.1/";	
 		RequestSpecification rs = RestAssured.given().queryParam("a", 10)
 				.queryParam("b", 20);
 		
