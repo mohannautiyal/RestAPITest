@@ -20,7 +20,7 @@ public class RestAppTests {
 		
 		Response resp = rs.get("/calculator/add");
 		int status =resp.getStatusCode();
-		
+		System.out.println("Status is " + status);
 		Assert.assertTrue(status==200, "Service failed");
 		
 	}
